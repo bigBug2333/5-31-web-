@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    div {
+      width: 1200px;
+      height: 100px;
+      background-color: pink;
+      margin: 0 auto;
+    }
+
+  
+    @media screen and (min-width: 1200px) {
+      div {
+        width: 1170px;
+        background-color: green;
+      }
+    }
+    
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      div {
+        width: 970px;
+        background-color: blue;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      div {
+        width: 750px;
+        background-color: yellow;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      div {
+        width: 100%;
+        background-color: pink;
+      }
+    }
+    
+    
+
+  </style>
+</head>
+<body>
+
+
+<!--设备的分类-->
+<!-- 如果> 1200px  大屏设备 让div的颜色变成绿色， 版心变成1170px -->
+<!-- 如果 992 ~ 1200px  中屏设备 让div的颜色变成蓝色， 版心变成970px -->
+<!-- 如果 768 ~ 992px  小屏屏设备 让div的颜色变成黄色， 版心变成750px -->
+<!--  如果 <768： 超小屏设备  width:100% pink  -->
+
+<div></div>
+
+
+</body>
+</html>
